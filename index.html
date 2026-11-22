@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PocketQuote – Coming Soon</title>
+<title>PocketQuote – Estimates, Contracts &amp; CRM for Roofers</title>
+<meta name="description" content="PocketQuote is the roofing estimate, contract and job-tracking app built by a roofer. Join the waitlist.">
 <style>
-body{font-family:sans-serif;text-align:center;padding:2em 1em;max-width:480px;margin:auto;color:#222}
-form{display:flex;flex-direction:column;gap:.6em;margin-top:1.5em}
-input{padding:.8em;font-size:1em;border:1px solid #bbb;border-radius:6px}
-button{padding:.9em;font-size:1em;border:0;border-radius:6px;background:#e8681a;color:#fff;font-weight:bold}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1d2330;line-height:1.55}
+a{color:#e8681a}
+.wrap{max-width:960px;margin:auto;padding:0 1.2em}
+header{background:#1d2330;color:#fff}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1em 0}
+.logo{font-weight:800;font-size:1.3em}.logo span{color:#e8681a}
+nav a.btn{padding:.5em 1em;font-size:.95em}
+.hero{padding:3em 0 4em;text-align:center}
+.hero h1{font-size:2.2em;line-height:1.15;margin:.2em 0}
+.hero p{font-size:1.15em;color:#c9cfdb;max-width:620px;margin:1em auto 1.8em}
+.btn{display:inline-block;background:#e8681a;color:#fff;text-decoration:none;font-weight:700;border-radius:8px;padding:.9em 1.6em;border:0;font-size:1em;cursor:pointer}
+section{padding:3.5em 0}
+h2{font-size:1.7em;text-align:center;margin:0 0 1.2em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2em}
+.card{background:#f5f6f8;border-radius:10px;padding:1.3em}
+.card h3{margin:.1em 0 .4em;font-size:1.1em}
+.card p{margin:0;color:#4a5263}
+.steps{counter-reset:s}
+.steps .card h3:before{counter-increment:s;content:counter(s) ". ";color:#e8681a}
+.alt{background:#f5f6f8}.alt .card{background:#fff}
+.roofer{max-width:680px;margin:auto;text-align:center;font-size:1.1em}
+#waitlist{background:#1d2330;color:#fff;text-align:center}
+#waitlist p{color:#c9cfdb}
+form{display:flex;flex-direction:column;gap:.6em;max-width:420px;margin:1.5em auto 0}
+input{padding:.85em;font-size:1em;border:1px solid #555;border-radius:8px}
 .hp{position:absolute;left:-9999px}
-#msg{margin-top:1em;font-weight:bold}
+#msg{font-weight:700;margin-top:1em}
+footer{text-align:center;padding:2em 1em;color:#6b7385;font-size:.9em}
 </style></head>
 <body>
-<h1>PocketQuote</h1>
-<p>Estimates, contracts and CRM for roofers. Coming soon.</p>
-<p><strong>Join the waitlist</strong> and be first to know when it launches.</p>
+<header><div class="wrap">
+<nav><div class="logo">Pocket<span>Quote</span></div><a class="btn" href="#waitlist">Join the waitlist</a></nav>
+<div class="hero">
+<h1>Roof estimates, contracts and jobs, right from your phone.</h1>
+<p>PocketQuote measures, prices and writes up the job on site, gets it signed, and tracks it until you're paid. Built by a roofer, for roofers.</p>
+<a class="btn" href="#waitlist">Get early access</a>
+</div>
+</div></header>
+
+<section><div class="wrap">
+<h2>Everything the job needs, in one app</h2>
+<div class="grid">
+<div class="card"><h3>Quick Estimate</h3><p>Enter length, width and ridge-to-eave and get an accurate roof estimate in minutes, standing in the driveway.</p></div>
+<div class="card"><h3>Smart materials list</h3><p>Pick the roof type and PocketQuote walks you through every material, from covering and underlayment to flashing, vents and fasteners, with quantities worked out for you.</p></div>
+<div class="card"><h3>Tear-off &amp; disposal</h3><p>Labor, extra layers and dumpster weight are estimated up front, so disposal never comes out of your profit.</p></div>
+<div class="card"><h3>Signed contracts</h3><p>Turn the estimate into an agreement and get it signed on the phone or on paper. Florida residential notices are built in.</p></div>
+<div class="card"><h3>Job tracking (CRM)</h3><p>Follow every job from lead to paid, including insurance claims, permits, inspections, follow-ups and job photos.</p></div>
+<div class="card"><h3>Works offline</h3><p>No signal on the roof? No problem. Your estimates and customers live on your phone, with encrypted backups.</p></div>
+</div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<h2>How it works</h2>
+<div class="grid steps">
+<div class="card"><h3>Measure</h3><p>Add the customer and the roof's measurements on site.</p></div>
+<div class="card"><h3>Estimate</h3><p>PocketQuote builds the materials, labor and disposal lines. You set your prices.</p></div>
+<div class="card"><h3>Sign</h3><p>Send or print a clean, itemized estimate that becomes the signed contract.</p></div>
+<div class="card"><h3>Get paid</h3><p>Track the job through to the final invoice: one job, one estimate, one invoice.</p></div>
+</div>
+</div></section>
+
+<section><div class="wrap roofer">
+<h2>Made by someone who's been on the roof</h2>
+<p>PocketQuote was built by a roofer who got tired of estimating on scraps of paper and spreadsheets. Every feature comes from real jobs: real tear-offs, real materials, real customers.</p>
+</div></section>
+
+<section id="waitlist"><div class="wrap">
+<h2>Join the waitlist</h2>
+<p>PocketQuote is launching soon. Sign up and you'll be first to know.</p>
 <form action="/join.php" method="post">
 <input name="name" placeholder="Your name" maxlength="100">
 <input name="company" placeholder="Company (optional)" maxlength="100">
 <input name="email" type="email" placeholder="Email" required maxlength="200">
 <input class="hp" name="website" tabindex="-1" autocomplete="off">
-<button type="submit">Join the waitlist</button>
+<button class="btn" type="submit">Join the waitlist</button>
 </form>
 <p id="msg"></p>
-<p>Contact: <a href="mailto:dennis.dowding@runlevelsystems.com">dennis.dowding@runlevelsystems.com</a></p>
+</div></section>
+
+<footer>
+<p>Questions? <a href="mailto:dennis.dowding@runlevelsystems.com">dennis.dowding@runlevelsystems.com</a></p>
+<p>&copy; 2026 PocketQuote</p>
+</footer>
 <script>
 var q=location.search,m=document.getElementById('msg');
-if(q.indexOf('ok=1')>-1){m.textContent="Thanks! You're on the list.";m.style.color='green'}
-if(q.indexOf('e=1')>-1){m.textContent='Please enter a valid email.';m.style.color='red'}
+if(q.indexOf('ok=1')>-1){m.textContent="Thanks! You're on the list.";m.style.color='#4ade80';location.hash='waitlist'}
+if(q.indexOf('e=1')>-1){m.textContent='Please enter a valid email.';m.style.color='#f87171';location.hash='waitlist'}
 </script>
 </body></html>
